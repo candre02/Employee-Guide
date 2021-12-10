@@ -3,7 +3,7 @@ CREATE DATABASE dealership;
 
 USE dealership;
 
-CREATE TABLE departments (
+CREATE TABLE department (
     id INTEGER PRIMARY KEY,
     dept_name VARCHAR(30)
 );
