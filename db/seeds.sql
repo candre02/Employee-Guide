@@ -1,29 +1,32 @@
-INSERT INTO department (id, dept_name)
+
+INSERT INTO department (name)
 VALUES 
-(1, "Sales"),
-(2, "Service"),
-(3, "Parts"),
-(4, "Finance");
+("Sales"),
+("Service"),
+("Parts"),
+("Finance");
 
-INSERT INTO role (id, title, salary, department_id)
+
+INSERT INTO role (title, salary, department_id)
 VALUES 
-(1, "Sales Consultant", "30000", "Sales"),
-(2, "Sales Lead", "60000", "Sales"),
-(3, "Service Advisor", "65000", "Service"),
-(4, "Service Manager", "80000", "Service"),
-(5, "Parts Associate", "34000", "Parts"),
-(6, "Parts Manager", "50000", "Parts"),
-(7, "Accountant", "60000", "Finance"),
-(8, "Account Manager", "80000", "Finance");
+("Sales Consultant", "30000", "1"),
+("Sales Lead", "60000", "1"),
+("Service Advisor", "65000", "2"),
+("Service Manager", "80000", "2"),
+("Parts Associate", "34000", "3"),
+("Parts Manager", "50000", "3"),
+("Accountant", "60000", "4"),
+("Account Manager", "80000", "4");
 
 
-INSERT INTO employee (id, first_name, last_name, roles_id, manager_id)
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
-(1, "Stacey", "Smith", "Sales Consultant", "Frank Duryea"),
-(2, "Frank", "Duryea", "Sales Lead", "null"),
-(3, "Lindsey", "Longhorn", "Service Advisor", "Karl Benz"),
-(4, "Karl", "Benz", "Service Manager", "null"),
-(5, "Wilma", "Westchester", "Parts Associate", "Charles Duryea"),
-(6, "Charles", "Duryea", "Parts Manager", "null"),
-(7, "Megan", "Mills", "Accountant", "John Law"),
-(8, "John", "Law", "Account Manager", "null");
+("Stacey", "Smith", "1", "2"),
+("Frank", "Duryea", "2", NULL),
+("Lindsey", "Longhorn", "3", "4"),
+("Karl", "Benz", "4", NULL),
+("Wilma", "Westchester", "5", "6"),
+("Charles", "Duryea", "6", NULL),
+("Megan", "Mills", "7", "8"),
+("John", "Law", "8", NULL);
