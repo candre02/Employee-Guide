@@ -78,7 +78,7 @@ function addEmployee() {
 ])
     .then((data) => {
         const sql = `INSERT INTO employers ('first_name', 'last_name', 'roles_id', 'manager_id) VALUES (?,?,?,?)`;
-        // // const params = [body.first_name, body.last_name, body.roles_id, body.manager_id];
+        
 
     db.query(
         "INSERT INTO employee (first_name, last_name, roles_id, manager_id) VALUES (?,?,?,?)",
