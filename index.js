@@ -53,7 +53,7 @@ function viewEmployees() {
 }
 
 function addEmployee() {
-    inquirer.prompt(
+    inquirer.prompt([
         {
         type: 'input',
         message: "What is your first name?",
@@ -74,17 +74,25 @@ function addEmployee() {
         message: "What is your manager's id?",
         name: "manager_id"
     
-    }).then(data => {
+    }
+])
+    .then((data) => {
         const sql = `INSERT INTO employers ('first_name', 'last_name', 'roles_id', 'manager_id) VALUES (?,?,?,?)`;
-        // const params = [body.first_name, body.last_name, body.roles_id, body.manager_id];
+        // // const params = [body.first_name, body.last_name, body.roles_id, body.manager_id];
 
-    db.query(sql, (err, result) => {
+    db.query(
+        "INSERT INTO employee (first_name, last_name, roles_id, manager_id) VALUES (?,?,?,?)",
+
+        [data.first_name, data.last_name, data.roles_id, data.manager_id],
+        
+        (err, data) => {
         if (err) {
         }
-        console.table(rows)
-        mainMenu()
-        }); 
-    })
+        console.table(data);
+        mainMenu();
+    }
+    );
+    });
 
 }
 
