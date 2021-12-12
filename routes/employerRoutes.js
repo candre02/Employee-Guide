@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../db/connection');
+const db = require('../config/connection');
 const inputCheck = require('../utils/inputCheck');
 
 // Get all employers alphabetized by roles id
@@ -91,7 +91,7 @@ router.put('/employer/:id', (req, res) => {
 
 // Delete a employer
 router.delete('/employer/:id', (req, res) => {
-    const sql = `DELETE FROM voters WHERE id = ?`;
+    const sql = `DELETE FROM employers WHERE id = ?`;
 
     db.query(sql, req.params.id, (err, result) => {
         if (err) {

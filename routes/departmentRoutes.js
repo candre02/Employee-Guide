@@ -1,7 +1,4 @@
-const express = require('express');
-const router = express.Router();
-const db = require('../db/connection');
-const inputCheck = require('../utils/inputCheck');
+
 
 // Get all department's and their role's 
 router.get('departments', (req, res) => {
@@ -58,7 +55,7 @@ router.post('/department', ({ body }, res) => {
         return;
     }
 
-    const sql = `INSERT INTO department (first_name, last_name, dept_name, role_id) 
+    const sql = `INSERT INTO department (name) 
                 VALUES (?,?,?,?)`;
     
     const params = [
