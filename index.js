@@ -116,6 +116,18 @@ function updateEmployee() {
             }
         }
 
+
+    // // SELECT FROM a single employee
+    // const sql = `SELECT * FROM employers WHERE id = ?`;
+
+    // db.query(sql, params, (err, rows) => {
+    //     if (err) {
+    //     }
+    //     console.table(rows);
+    // });
+
+    
+
     // // Delete a employee 
     // const sql = `DELETE FROM employee WHERE id = ?`;
 
