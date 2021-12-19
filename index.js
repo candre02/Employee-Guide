@@ -86,7 +86,7 @@ function mainMenu() {
         });
 };
 
-// View all Employees---finished--works
+// View all Employees
 function viewEmployees() {
     const sql = `SELECT * FROM employee ORDER BY role_id`;
 
@@ -98,7 +98,7 @@ function viewEmployees() {
     });
 };
 
-// View All  Roles-- finished-works
+// View All  Roles
 function viewRoles() {
     const sql = `SELECT * FROM role;`;
 
@@ -111,7 +111,7 @@ function viewRoles() {
 };
 
 
-// View all departments --- works--finished
+// View all departments 
 function viewDepartments() {
     const sql = `SELECT * FROM department;`;
 
@@ -211,7 +211,8 @@ function viewDepartments() {
 //     });
 // }
 
-//------- ADD EMPLOYEE ----works ------finished---
+
+
 // Add Employee
 function addEmployee() {
     inquirer
@@ -260,7 +261,7 @@ function addEmployee() {
 
 }
 
-// ADD ROLE-------work--finished----
+// ADD ROLE
 function addRole() {
     inquirer
         .prompt([
@@ -318,7 +319,7 @@ function addRole() {
 
 }
 
-// ADD DEPT------works----- finished
+// ADD DEPT
 function addDepartment() {
     inquirer 
         .prompt([
@@ -348,10 +349,7 @@ function addDepartment() {
  };
 
 
-
-
-
-//  update employee by role----- works---- finihed----
+//  update employee by role
 function updateEmployeeRole() {
     inquirer .prompt([
         {
@@ -385,7 +383,7 @@ function updateEmployeeRole() {
     )
         }
     
-//  Update employees by manager----(Bonus)---works/finished
+//  Update employees by manager
 function updateEmployeeMgr() {
     inquirer .prompt([
         {
@@ -420,7 +418,7 @@ function updateEmployeeMgr() {
         };
     
 
-// Delete a employee----works/finished----(Bonus)----
+// Delete a employee
 function deleteEmployee() {
     console.log('deleteEmployee')
 
@@ -452,7 +450,7 @@ function deleteEmployee() {
     
     
 
-// Delete Role----works--- finished---- (bonus)
+// Delete Role
 function deleteRole() {
     inquirer .prompt([
         {
