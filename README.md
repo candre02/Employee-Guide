@@ -1,8 +1,9 @@
-https://watch.screencastify.com/v/mhqj9GJXkGskw8XO43cE
-
 # Employee-Guide
 
-## License
+### Deployed Link
+[Click here!](https://watch.screencastify.com/v/mhqj9GJXkGskw8XO43cE)
+
+### License
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 ## Description
