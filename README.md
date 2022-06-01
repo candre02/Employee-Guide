@@ -1,6 +1,6 @@
 # Employee-Guide
 
-### Deployed Link
+### Deploy Back-end Link
 [Click here!](https://watch.screencastify.com/v/mhqj9GJXkGskw8XO43cE)
 
 ### License
@@ -19,5 +19,5 @@ In order for the application to be used, the user would need the command-line an
 None
 
 # Contact
-* Github: candre02
-* Email: candre02.2@gmail.com
+* [candre02](https://www.github.com/candre02)
+* [Email](http://www.candre02.2@gmail.com/)
