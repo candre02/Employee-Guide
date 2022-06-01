@@ -18,6 +18,9 @@ In order for the application to be used, the user would need the command-line an
 ## Tests
 None
 
+### Images
+![employeetrackerpic](https://user-images.githubusercontent.com/81876258/171507325-7560ec72-34e8-422f-9248-092dd99d86d7.png)
+
 # Contact
 * [candre02](https://www.github.com/candre02)
 
